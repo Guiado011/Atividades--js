@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 20</title>
+</head>
+<body>
+    <script>
+        function maiorOito(){
+            var mO = 0
+            for(let i = 0; i < 20; i++){
+                var n = parseInt(prompt("Digite o valor de um número:"))
+                if(n > 8){
+                    mO++
+                }
+            }
+            alert(`${mO} números são maior(es) que 8`)
+            maiorOito()
+        }
+        maiorOito()
+    </script>
+</body>
+</html>

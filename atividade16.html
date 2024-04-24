@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 16</title>
+</head>
+<body>
+    <script>
+        function mediaIdades(){
+            var m = 0
+            for(let i = 0; i < 20; i++){
+                var iP = parseInt(prompt("Digite a idade de uma pessoa:"))
+                m += iP
+            }
+            m = m / 20
+            alert(`A média das idades é: ${m}`)
+            mediaIdades()
+        }
+        mediaIdades()
+    </script>
+</body>
+</html>

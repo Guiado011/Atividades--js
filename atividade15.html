@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 15</title>
+</head>
+<body>
+    <script>
+        function somarIdade(){
+            var sI = 0
+            for(let i = 0; i < 20; i++){
+                var s = parseInt(prompt("Digite a idade de uma pessoa:"))
+                sI += s 
+            }
+            alert(`A soma das idades é: ${sI}`)
+            somarIdade()
+        }
+        somarIdade()
+    </script>
+</body>
+</html>

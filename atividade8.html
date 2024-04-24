@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 8</title>
+</head>
+<body>
+    <script>
+        function calcular(){
+            var ipi = parseInt(prompt("Digite o valor do IPI:"))
+            var cP1 = parseInt(prompt("Digite o código da peça 1:"))
+            var vP1 = parseInt(prompt("Digite o valor da peça 1:"))
+            var qP1 = parseInt(prompt("Digite a quantidade de peça 1:"))
+            var cP2 = parseInt(prompt("Digite o código da peça 2:"))
+            var vP2 = parseInt(prompt("Digite o valor da peça 2:"))
+            var qP2 = parseInt(prompt("Digite a quantidade de peça 2:"))
+            var t = (((vP1 * qP1) + (vP2 * qP2)) * (ipi / 100 + 1))
+            alert(`Total: ${t}`)
+            calcular()
+        }
+        calcular()
+    </script>
+</body>
+</html>

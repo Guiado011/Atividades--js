@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+<body>
+    <script>
+        function divisivel(){
+            var n = parseInt(prompt("Digite um número:"))
+            if(n % 2 == 0){
+                if (n % 2 == 0 && n % 5 == 0 && n % 10 == 0){
+                    alert(`${n} é divisível pelos números: (2, 5, 10)`)
+                    divisivel()
+                }else if(n % 2 == 0 && n % 10 == 0){
+                    alert(`${n} é divisível pelo número 2 e 10`)
+                    divisivel()
+                }else{
+                    alert(`${n} é divisível por 2`)
+                    divisivel()
+                }
+                
+            }else if(n % 5 == 0){
+                if(n % 5 == 0 && n % 10 == 0){
+                    alert(`${n} é divisível pelo número 2 e 10`)
+                    divisivel()
+                }else{
+                    alert(`${n} é divisivel por 5`)
+                    divisivel()
+                }
+            }else{
+                alert(`${n} não é divisível por nenhum dos números: (2, 5, 10)`)
+                divisivel()
+            }
+        }
+        divisivel()
+    </script>
+</body>
+</html>

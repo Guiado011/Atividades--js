@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 18</title>
+</head>
+<body>
+    <script>
+        function maisNova(){
+            var n = []
+            var iP = []
+            for(let i = 0; i < 10; i++){
+                n.push(prompt("Digite o nome de uma pessoa:"))
+                iP.push(parseInt(prompt("Digite a idade de uma pessoa:")))
+            }
+            var mP = Math.min(...iP)
+            var indice = iP.indexOf(mP)
+            var pMN = n[indice]
+            alert(`A menor pessoa é ${pMN} com ${mP} anos`)
+            maisNova()
+        }
+        maisNova()
+    </script>
+</body>
+</html>

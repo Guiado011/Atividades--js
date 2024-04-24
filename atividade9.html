@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9</title>
+</head>
+<body>
+    <script>
+        function salario(){
+            var sU = parseFloat(prompt("Digite o valor do seu salário: R$"))
+            var sM = 1212.00
+            var qSM = (sU / sM).toFixed(1)
+            alert(`salário Mínimo: R$${sM}, Quantidade de Salários Mínimos: ${qSM}`)
+            salario()
+        }
+        salario()
+    </script>
+</body>
+</html>

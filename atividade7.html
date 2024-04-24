@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7</title>
+</head>
+<body>
+    <script>
+        function media(){
+            var n1 = [8, 9, 7]
+            var n2 = [4, 5, 6]
+            var sn1 = 0
+            var sn2 = 0
+            for(var i = 0; i < n1.length; i++){
+                sn1 += n1[i]
+                sn2 += n2[i]
+            }
+            var mAn1 = sn1 / 3
+            var mAn2 = sn2 / 3
+            var sDM = mAn1 + mAn2
+            var mM = sDM / 2
+            alert(`A média Aritmética de ${n1} é: ${mAn1}`)
+            alert(`A média Aritmética de ${n2} é: ${mAn2}`)
+            alert(`A soma das médias é: ${sDM}`)
+            alert(`A média de (${mAn1}, ${mAn2}) é: ${mM}`)
+        }
+
+        media()
+    </script>
+</body>
+</html>

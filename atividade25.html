@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 25</title>
+</head>
+<body>
+    <script>
+        function soma(){
+            var n = nU = 0
+            do{
+                nU = parseInt(prompt("Digite o valor de um número:"))
+                if(nU >= 0){
+                    n += nU
+                }
+            }while(nU >= 0)
+            alert(`A soma dos números é: ${n}`)
+            soma()
+        }
+        soma()
+    </script>
+</body>
+</html>

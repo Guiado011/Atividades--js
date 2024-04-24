@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 22</title>
+</head>
+<body>
+    <script>
+        function entre(){
+            var s = 0
+            for(let i = 0; i < 20; i++){
+                var n = parseInt(prompt("Digite o valor de um número:"))
+                if(n >= 0 && n <= 100){
+                    s++
+                }
+            }
+            alert(`${s} número(s) está entre 0 e 100`)
+            entre()
+        }
+        entre()
+    </script>
+</body>
+</html>

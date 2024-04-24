@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 10</title>
+</head>
+<body>
+    <script>
+        function reajuste(){
+            var s = parseFloat(prompt("Digite o valor do saldo:"))
+            var r = 0.015
+            s += (s * r)
+            alert(`O valor do saldo com reajuste fica: R$${s}`)
+            reajuste()
+        }
+        reajuste()
+    </script>
+</body>
+</html>

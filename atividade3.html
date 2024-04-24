@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+</head>
+<body>
+    <script>
+        function saldo(){
+            var s = parseFloat(prompt("Digite o saldo médio anual:"))
+            if(s >= 0 && s <= 500){
+                t = 0
+                var c = (s * t).toFixed(2)
+                alert(`R$${s}: nenhum crédito`)
+                saldo()
+            }else if(s >= 501 && s <= 1000){
+                t = 0.3
+                var c = (s * t).toFixed(2)
+                alert(`R$ ${s}: 30% do valor do saldo médio (R$${c})`)
+                saldo()
+            }else if(s >= 1001 && s <= 3000){
+                t = 0.4
+                var c = (s * t).toFixed(2)
+                alert(`R$ ${s}: 40% do valor do saldo médio (R$${c})`)
+                saldo()
+            }else if(s >= 3001){
+                t = 0.5
+                var c = (s * t).toFixed(2)
+                alert(`R$ ${s}: 50% do valor do saldo médio (R$${c})`)
+                saldo()
+            }else{
+                alert("Diigite um número inteiro:")
+                saldo()
+            }
+        }
+
+        saldo()
+    </script>
+</body>
+</html>

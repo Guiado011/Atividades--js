@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 6</title>
+</head>
+<body>
+    <script>
+        function numerar(){
+            var n = parseInt(prompt("Digite um número inteiro:"))
+            var a = n - 1
+            var s = n + 1
+            var m = alert(`Antecessor: ${a}, Sucessor: ${s}`)
+            numerar()
+        }
+
+        numerar()
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 11</title>
+</head>
+<body>
+    <script>
+        function vendedor(){
+            var n = prompt("Digite o seu nome:")
+            var s = parseFloat(prompt("Digite o seu salário: R$"))
+            var v = parseInt(prompt("Quantas vendas foram feita este mês: R$"))
+            var j = v * 0.15
+            var c = s  + (v * 0.15)
+            alert(`${n}, salário: R$${s} + ${j} = R$${c}`)
+            vendedor()
+
+        }
+        vendedor()
+    </script>
+</body>
+</html>

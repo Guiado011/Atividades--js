@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+</head>
+<body>
+    <script>
+        function cardapio(){
+            var x = parseInt(prompt("1- Pratos, 2- Sobremesas, 3- Bebidas"))
+            switch(x){
+                case 1: 
+                    var p = parseInt(prompt("Pratos: 1- Vegetariano, 2- Peixe, 3- Frango 4- Carne;"))
+                    switch(p){
+                        case 1: 
+                            alert("Calorias: 180")
+                            cardapio()
+                        case 2: 
+                            alert("Calorias: 230")
+                            cardapio()
+                        case 3: 
+                            alert("Calorias: 250")
+                            cardapio()
+                        case 4: 
+                            alert("Calorias: 350")
+                            cardapio()
+                        default: 
+                            alert("Digite uma opção Válida!")
+                            cardapio()
+                    }   
+                case 2: 
+                    var s = parseInt(prompt("Sobremesas: 1- Abacaxi, 2- Sorvete diet 3- Mousse diet 4- Mouse chocolate;"))
+                    switch(s){
+                        case 1: 
+                            alert("Calorias: 75")
+                            cardapio()
+                        case 2: 
+                            alert("Calorias: 110")
+                            cardapio()
+                        case 3: 
+                            alert("Calorias: 170")
+                            cardapio()
+                        case 4: 
+                            alert("Calorias: 200")
+                            cardapio()
+                        default: 
+                            alert("Digite uma opção Válida!")
+                    }   
+                case 3: 
+                    var b = parseInt(prompt("Bebidas: 1- Chá, 2- Suco de laranja, 3- Suco de melão, 4- Refrigerante diet"))
+                    switch(b){
+                        case 1: 
+                            alert("Calorias: 20")
+                            cardapio()
+                        case 2: 
+                            alert("Calorias: 70")
+                            cardapio()
+                        case 3: 
+                            alert("Calorias: 100")
+                            cardapio()
+                        case 4: 
+                            alert("Calorias: 65")
+                            cardapio()
+                        default: 
+                            alert("Digite uma opção Válida!")
+                            cardapio()
+                    }
+                default: 
+                        alert("Digite uma opção Válida!")
+                        cardapio()
+            }
+        }
+
+        cardapio()
+         
+    </script>
+</body>
+</html>
